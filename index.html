@@ -7,14 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="list.css">
 </head>
 <body>
  
     
 
     <div class="pokedex">
-        <div class="pokemon-cards">
-            <div class="pokemon-card">
+        <div class="pokemon-cards open ativo">
+            <div class="pokemon-card eletric_type open ativo" id="pikachu-card">
                 <div class="card-top">
                     <div class="details">
                         <h2 class="name"> pikachu</h2>
@@ -27,7 +29,7 @@
                     </div>
                 </div>
                 <div class="card-info">
-                    <div class="card-status">
+                    <div class="status">
                         <h3>status</h3>
                         <ul>
                             <li>HP: 35</li>
@@ -37,7 +39,7 @@
                             <li>Total: 220</li>
                         </ul>
                     </div>
-                    <div class="abilyty">
+                    <div class="ability">
                         <h3>Habilidades</h3>
                             <ul>
                                 <li>Cabeçada</li>
@@ -47,7 +49,7 @@
                 </div>
             </div>
 
-            <div class="pokemon-card">
+            <div class="pokemon-card grass_type  " id="bulbasaur-card">
                 <div class="card-top">
                     <div class="details">
                         <h2 class="name"> Bulbasaur</h2>
@@ -60,7 +62,7 @@
                     </div>
                 </div>
                 <div class="card-info">
-                    <div class="card-status">
+                    <div class="status">
                         <h3>status</h3>
                         <ul>
                             <li>HP: 45</li>
@@ -70,7 +72,7 @@
                             <li>Total: 188</li>
                         </ul>
                     </div>
-                    <div class="abilyty">
+                    <div class="ability">
                         <h3>Habilidades</h3>
                         <ul>
                             <li>Folha navalha</li>
@@ -82,7 +84,7 @@
 
 
 
-            <div class="pokemon-card">
+            <div class="pokemon-card fire_type" id="charmander-card">
                 <div class="card-top">
                     <div class="details">
                         <h2 class="name"> Charmander</h2>
@@ -95,7 +97,7 @@
                     </div>
                 </div>
                 <div class="card-info">
-                    <div class="card-status">
+                    <div class="status">
                         <h3>status</h3>
                         <ul>
                             <li>HP: 39</li>
@@ -105,7 +107,7 @@
                             <li>Total: 194</li>
                         </ul>
                     </div>
-                    <div class="abilyty">
+                    <div class="ability">
                         <h3>Habilidades</h3>
                         <ul>
                             <li>presa de fogo</li>
@@ -116,7 +118,7 @@
             </div>
 
 
-            <div class="pokemon-card">
+            <div class="pokemon-card water_type " id="squirdle-card">
                 <div class="card-top">
                     <div class="details">
                         <h2 class="name"> Squirtle</h2>
@@ -129,7 +131,7 @@
                     </div>
                 </div>
                 <div class="card-info">
-                    <div class="card-status">
+                    <div class="status">
                         <h3>status</h3>
                         <ul>
                             <li>HP: 44</li>
@@ -139,7 +141,7 @@
                             <li>Total: 200</li>
                         </ul>
                     </div>
-                    <div class="abilyty">
+                    <div class="ability">
                         <h3>Habilidades</h3>
                         <ul>
                             <li>Causa da Água</li>
@@ -148,20 +150,20 @@
                     </div>
                 </div>
             </div>
-            <div class="pokemon-card">
+            <div class="pokemon-card dark_type" id="gendar-card">
                 <div class="card-top">
                     <div class="details">
-                        <h2 class="name"></h2>
-                        <span>#0007</span>
+                        <h2 class="name">Gengar</h2>
+                        <span>#0094</span>
                     </div>
 
-                    <div class="type"> Àgua</div>
+                    <div class="type">Fantasma </div>
                     <div class="card-img">
                         <img src="images-pokemon/gengar.png" alt="">
                     </div>
                 </div>
                 <div class="card-info">
-                    <div class="card-status">
+                    <div class="status">
                         <h3>status</h3>
                         <ul>
                             <li>HP: 60</li>
@@ -171,7 +173,7 @@
                             <li>Total: 295</li>
                         </ul>
                     </div>
-                    <div class="abilyty">
+                    <div class="ability">
                         <h3>Habilidades</h3>
                         <ul>
                             <li>Sombra noturna</li>
@@ -181,10 +183,10 @@
                 </div>
             </div>
 
-            <div class="pokemon-card">
+            <div class="pokemon-card dragon_type" id="dragonite-card">
                 <div class="card-top">
                     <div class="details">
-                        <h2 class="name"></h2>
+                        <h2 class="name">Dragonite</h2>
                         <span>#0007</span>
                     </div>
 
@@ -194,7 +196,7 @@
                     </div>
                 </div>
                 <div class="card-info">
-                    <div class="card-status">
+                    <div class="status">
                         <h3>status</h3>
                         <ul>
                             <li>HP: 91</li>
@@ -204,7 +206,7 @@
                             <li>Total: 400</li>
                         </ul>
                     </div>
-                    <div class="abilyty">
+                    <div class="ability">
                         <h3>Habilidades</h3>
                         <ul>
                             <li>Dança do dragão</li>
@@ -214,6 +216,57 @@
                 </div>
             </div>
          </div>
+
+
+         <nav class="listagem ativo">
+            <ul>
+
+                <li class="pokemon ativo" id="pikachu">
+                    <img src="images-pokemon/cabeca-pikachu.png" alt="">
+                    <span>Pikachu</span>
+                </li>
+                
+
+                <li class="pokemon" id="Bulbasaur">
+                    <img src="images-pokemon/cabeca-bulbasaur.png" alt="">
+                    <span>Bulbasaur</span>
+                </li>
+
+
+                <li class="pokemon" id="Charmander">
+                    <img src="images-pokemon/cabeca-charmander.png" alt="">
+                    <span>Charmander</span>
+                </li>
+
+
+                <li class="pokemon" id="Squirtle">
+                    <img src="images-pokemon/cabeca-squirtle.png" alt="">
+                    <span>Squirtle</span>
+                </li>
+
+
+                <li class="pokemon" id="Gendar">
+                    <img src="images-pokemon/cabeca-gengar.png" alt="">
+                    <span>Gengar</span>
+                </li>
+
+
+                
+                <li class="pokemon" id="Dragonite">
+                    <img src="images-pokemon/cabeca-dragonite.png" alt="">
+                    <span>Dragonite</span>
+                </li>
+
+
+                
+                    
+                    
+            </ul>
+
+
+         </nav>
+
+         
     </div>
 
 
